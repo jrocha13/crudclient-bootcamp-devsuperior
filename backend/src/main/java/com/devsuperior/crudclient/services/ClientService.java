@@ -9,6 +9,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.crudclient.dto.ClientDTO;
@@ -17,6 +18,7 @@ import com.devsuperior.crudclient.repositories.ClientRepository;
 import com.devsuperior.crudclient.services.exceptions.DatabaseException;
 import com.devsuperior.crudclient.services.exceptions.ResourceNotFoundException;
 
+@Service
 public class ClientService {
 
 	@Autowired
